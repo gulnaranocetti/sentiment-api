@@ -22,7 +22,7 @@ FROM python:3.9-slim
 
 RUN apt-get update && apt-get install -y \
     libffi-dev \
-    libstdc++ \
+    libstdc++6 \
     libopenblas-dev \
     curl \
     && rm -rf /var/lib/apt/lists/*
